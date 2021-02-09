@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/collection/collection",
+    "pages/info/info"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "ColorRecom",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "搭配"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "收藏"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "介绍"
+      }
+    ],
+    "borderStyle": "white"
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}

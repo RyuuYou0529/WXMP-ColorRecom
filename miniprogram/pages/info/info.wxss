@@ -1,0 +1,17 @@
+/* miniprogram/pages/info.wxss */
+text{
+  font-size: large;
+  line-height: 50px;
+  margin: 5px 10px;
+}
+.title{
+  text-align: center;
+  font-size: 24px;
+}
+.img{
+  display: flex;
+  justify-content: center;
+}
+image{
+  border: 1px solid rgb(100, 100, 100);
+}

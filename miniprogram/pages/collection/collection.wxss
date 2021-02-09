@@ -1,0 +1,18 @@
+/* miniprogram/pages/index/collection.wxss */
+.colorShow{
+  margin: 10px;
+  height: 180px;
+  display: flex;
+}
+.colorBackground{
+  background-color: white;
+  box-shadow: 2px 5px 5px gainsboro;
+  height: 180px;
+  width: 100%;
+}
+.colorList{
+  margin: 10px 10px;
+}
+.colorItem{
+  height: 40px;
+}

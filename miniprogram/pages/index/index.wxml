@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<!--颜色搭配推荐面板-->
+<view class="colorShow">
+  <!--颜色区域-->
+  <view class="color">
+    <view class="color_mainItem {{shiftIndex==0?'selectedItem':''}}" style="background-color:{{color[0]}}" data-index="0" bindtap="selectColor">
+      <view class="ItemText">{{color[0]}}</view>
+    </view>
+    <view class="color_subItem1 {{shiftIndex==1?'selectedItem':''}}" style="background-color:{{color[1]}}" data-index="1" bindtap="selectColor">
+      <view class="ItemText">{{color[1]}}</view>
+    </view>
+    <view class="color_subItem2 {{shiftIndex==2?'selectedItem':''}}" style="background-color:{{color[2]}}" data-index="2" bindtap="selectColor">
+      <view class="ItemText">{{color[2]}}</view>
+    </view>
+    <view class="color_subItem3 {{shiftIndex==3?'selectedItem':''}}" style="background-color:{{color[3]}}" data-index="3" bindtap="selectColor">
+      <view class="ItemText">{{color[3]}}</view>
+    </view>
+  </view>
+  <!--按钮区域-->
+  <view class="button">
+    <!--收藏按钮-->
+    <view class="mark_box" bindtap="markThis">
+      <mp-icon class="mark_icon" type="{{markIconType}}" icon="like" color="#e5707e" size="30"></mp-icon>
+      <view class="mark_text">Mark</view>
+    </view>
+    <!--更新按钮-->
+    <view bindtap="createColor">
+      <mp-icon type="outline" icon="arrow"></mp-icon>
+    </view>
+  </view>
+</view>
+<!--调色面板-->
+<view class="colorShift">
+  <view class="shiftItem">
+    <text>Red</text>
+    <slider data-color="R" value="{{R}}" max="255" activeColor="rgb({{R}},0,0)" show-value="true" bindchanging="shiftColor" bindchange="shiftColor"></slider>
+  </view>
+  <view class="shiftItem">
+    <text>Green</text>
+    <slider data-color="G" value="{{G}}" max="255" activeColor="rgb(0,{{G}},0)" show-value="true" bindchanging="shiftColor" bindchange="shiftColor"></slider>
+  </view>
+  <view class="shiftItem">
+    <text>Blue</text>
+    <slider data-color="B" value="{{B}}" max="255" activeColor="rgb(0,0,{{B}})" show-value="true" bindchanging="shiftColor" bindchange="shiftColor"></slider>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--miniprogram/pages/info.wxml-->
+<text class="title">~初学微信小程序之菜鸡练习作品~</text>
+<text>搭配页面：</text>
+<view class="img">
+  <image class="img" src="cloud://wxmp-cloud-2ggfoh0f0ee64ef0.7778-wxmp-cloud-2ggfoh0f0ee64ef0-1304828285/ColorRecom/images/useInfo_1.jpg" mode="widthFix"></image>
+</view>
+<text>收藏页面：</text>
+<view class="img">
+  <image class="img" src="cloud://wxmp-cloud-2ggfoh0f0ee64ef0.7778-wxmp-cloud-2ggfoh0f0ee64ef0-1304828285/ColorRecom/images/useInfo_2.jpg" mode="widthFix"></image>
+</view>
+<text>备注：有很多不完善的逻辑...请谅解</text>

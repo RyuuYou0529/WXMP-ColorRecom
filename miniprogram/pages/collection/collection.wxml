@@ -1,0 +1,11 @@
+<!--miniprogram/pages/index/collection.wxml-->
+<view class="colorShow" wx:for="{{ColorList}}" wx:for-index="index" wx:for-item="item">
+  <view class="colorBackground" data-index="{{index}}" bindtap="colorEdit">
+    <view class="colorList">
+      <view class="colorItem" style="background-color:{{item.color[0]}}"></view>
+      <view class="colorItem" style="background-color:{{item.color[1]}}"></view>
+      <view class="colorItem" style="background-color:{{item.color[2]}}"></view>
+      <view class="colorItem" style="background-color:{{item.color[3]}}"></view>
+    </view>
+  </view>
+</view>
